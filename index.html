@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Smoothie Generator</title>
+        <title>SmokeTracker</title>
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!-- Compiled and minified JavaScript -->
@@ -18,132 +17,79 @@
     </head>
     <body>
         <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="title">Smoothie Generator</a>
+            <div class="nav-wrapper" >
+                <a href="#" class="title" >SmokeTracker</a>
             </div>
         </nav>
         <div class="search card">
             <div class="col s12 m6">
                 <div class="card small blue-grey darken-1">
                     <div class="card-content white-text">
-                        <span class="card-title">BEGIN HERE</span>
-                        <p>To start making your smoothie, please select a fruit.</p>
+                        <span class="card-title">Recent Global Fires</span>
                     </div>
                     <div class="form-group input-group">
-                        <input type="text" class="form-control" id="search-fruit" placeholder="Type a fruit here...">
                         <div class="input-group-append">
-                            <button class="btn btn-info" type="button" id="search-fruit-button"><i
-                                    class="fas fa-search"></i>search</button>
+                            <button class="btn btn-info" type="button" id="Search Recent Fires"><i
+                                    class="fas fa-search"></i>Fires</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-            <div class="row-1">
-                <div class="col s12 m6">
-                  <div class="card">
-                    <div class="card-image">
-                        <!--insert spoonacular img here-->
-                      <img src="images/sample-1.jpg">
-                      <!--name of recipe-->
-                      <span class="card-title">Card Title</span>
-                        <!--button to link to recipes on site-->
-                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                    </div>
-                    <div class="card-content">
-                        <!--recipe info-->
-                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              
-
-            <div class="row-2">
-                <div class="col s12 m6">
-                  <div class="card">
-                    <div class="card-image">
-                        <!--insert spoonacular img here-->
-                      <img src="images/sample-1.jpg">
-                      <!--name of recipe-->
-                      <span class="card-title">Card Title</span>
-                        <!--button to link to recipes on site-->
-                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                    </div>
-                    <div class="card-content">
-                        <!--recipe info-->
-                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              
-
-            <div class="row-3">
-                <div class="col s12 m6">
-                  <div class="card">
-                    <div class="card-image">
-                        <!--insert spoonacular img here-->
-                      <img src="images/sample-1.jpg">
-                      <!--name of recipe-->
-                      <span class="card-title">Card Title</span>
-                        <!--button to link to recipes on site-->
-                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                    </div>
-                    <div class="card-content">
-                        <!--recipe info-->
-                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            <footer>
-            </footer>
-            <!--JavaScript at end of body for optimized loading-->
-            <script type="text/javascript" src="js/materialize.min.js"></script>
+          
+  <div class="row" id="fire-card-1">
+    <div class="col s12 m7">
+      <div class="card small">
+        <div class="card-image">
+          <span class="card-title">Card Title</span>
         </div>
-    </body>
-    </html>
-=======
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>TimeChef/Eating through time(working-title)</title>
-</head>
-<body>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="title">Smoothie Generator</a>
+        <div class="card-content">
+          <p>Here the info about each fire will be listed from Eos</p>
         </div>
-    </nav>
-    <div class="search card">
-        <div class="col s12 m6">
-            <div class="card small blue-grey darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title">BEGIN HERE</span>
-                    <p>To start making your smoothie, please select a fruit.</p>
-                </div>
-                <div class="form-group input-group">
-                    <input type="text" class="form-control" id="search-fruit" placeholder="Type a fruit here...">
-                    <div class="input-group-append">
-                        <button class="btn btn-info" type="button" id="search-fruit-button"><i
-                                class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </div>
+        <div class="card-action">
+          <a id="air-data-1">This is where air quality data goes</a>
         </div>
-        <footer>
-        </footer>
-        <!--JavaScript at end of body for optimized loading-->
-        <script type="text/javascript" src="js/materialize.min.js"></script>
+      </div>
     </div>
-</body>
-</html>
->>>>>>> 010bcb6c2f5ab659fbf48196c33fbfe4ceb845b6
+  </div>
+
+  <div class="row" id="fire-card-2">
+    <div class="col s12 m7">
+      <div class="card small">
+        <div class="card-image">
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p>Here the info about each fire will be listed from Eos</p>
+        </div>
+        <div class="card-action">
+          <a id="air-data-3">This is where air quality data goes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="fire-card-3">
+    <div class="col s12 m7">
+      <div class="card small">
+        <div class="card-image">
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p>Here the info about each fire will be listed from Eos</p>
+        </div>
+        <div class="card-action">
+          <a id="air-data-3">This is where air quality data goes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="./script.js"></script>
+    </div>
+  </body>
+  </html>
