@@ -4,23 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EONET How-to</title>
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css" type="text/css">
+    <title>FireTracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css" type="text/css">
     <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <div id="selections" class="selections">
-        <h2>EONET How-to<span id="eventTitle"></span></h2>
-        <div id="eventSelect">
-            <dl id="eventList"></dl>
-        </div>
-        <div id="layerSelect">
-            <dl id="layerList"></dl>
-        </div>
+<body class="light-blue darken-3">
+    
+<nav>
+    <div class="nav-wrapper center blue-grey z-depth-4">
+      <a href="" class="brand-logo center">WildFire AQI FireTracker</a>
     </div>
-    <div id="map" class="map"></div>
-    <span id="city-aqi-container"></span>
+</nav>
+
+    <div class="card light-blue darken-3">
+        <div class="card center">
+            <div class="col s12 m6">
+                <div>
+                    <p id="data-display1" class="center red black-text"></p>
+                    <p2 id="aqi-display1" class="center blue lighten-1 white-text"></p2>
+                </div>
+            </div>
+        </div>
+        <div class="card center">
+            <div>
+                <p id="data-display2" class="center red black-text"></p>
+                <p2 id="aqi-display2" class="blue lighten-1 white-text "></p2>
+            </div>
+        </div>
+        <div class="card center">    
+            <div>
+                <p id="data-display3" class="center red black-text"></p>
+                <p2 id="aqi-display3" class="blue lighten-1 white-text"></p2>
+            </div>
+        </div>
+        <div class="card center">
+            <div>
+                <p id="data-display4" class="center red black-text"></p>
+                <p2 id="aqi-display4" class="blue lighten-1 white-text "></p2>
+            </div>
+        </div>
+        <div class="card center">    
+            <div>
+                <p id="data-display5" class="center red black-text"></p>
+                <p2 id="aqi-display5" class="blue lighten-1 white-text "></p2>
+            </div>
+        </div>
+        <footer class="page-footer blue-grey z-depth-3">
+            <div class="container">
+              <div class="col center">
+                  <h5 class="col 14 white-text center">AQI Info</h5>
+                  <p1 class="black-text center blue">AQI Index: 1 = Good!</p1>
+                  <p2 class="black-text center green">AQI Index: 2 = Fair!</p2>
+                  <p3 class="black-text center yellow">AQI Index: 3 = Moderate!</p3>
+                  <p4 class="black-text center orange">AQI Index: 4 = Poor!</p4>
+                  <p5 class="black-text center red">AQI Index: 5 = Very Poor!</p5>
+                </div>
+                <div class="center">
+                  <p3 class="grey-text text-lighten-4 center">Designed and built by:</p3>
+                  <h5 class="white-text center">Matt Estes</h5>
+                  <h5 class="white-text center">Caleb Norcross</h5> 
+                  <h5 class="white-text center">Leobardo Morales</h5> 
+                  <h5 class="white-text center">Shyhevia Alexander</h5> 
+                  <h5 class="white-text center">Scott 'Billy' Pinkerton</h5> 
+                </div>
+              </div>
+            </div>
+          </footer>
+    </div>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"
         type="text/javascript"></script>
