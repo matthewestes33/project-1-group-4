@@ -1,5 +1,3 @@
-
-
 //Variables to pull the data from EONET for the current tracked wildfires
 let dataDisplay1 = document.getElementById('data-display1');
 let dataDisplay2 = document.getElementById('data-display2');
@@ -28,6 +26,7 @@ async function getEos1() {
         aqiDisplay1.append(" AQI: " + await addAqi(lon, lat));
     }
     addAqi(lon, lat);
+    localStorage.setItem("wildfire1", JSON.stringify(data.events[0].geometry[0].coordinates));
 }
 //this is a repeat of the getEos function but built to run and display to a new <p> tag, 
 async function getEos2() {
@@ -42,6 +41,7 @@ async function getEos2() {
         aqiDisplay2.append(" AQI: " + await addAqi(lon, lat));
     }
     addAqi(lon, lat);
+    localStorage.setItem("wildfire2", JSON.stringify(data.events[1].geometry[0].coordinates));
 }
 
 async function getEos3() {
@@ -56,6 +56,7 @@ async function getEos3() {
         aqiDisplay3.append(" AQI: " + await addAqi(lon, lat));
     }
     addAqi(lon, lat);
+    localStorage.setItem("wildfire3", JSON.stringify(data.events[2].geometry[0].coordinates));
 }
 async function getEos4() {
     var response = await fetch(eosUrl)
@@ -69,6 +70,7 @@ async function getEos4() {
         aqiDisplay4.append(" AQI: " + await addAqi(lon, lat));
     }
     addAqi(lon, lat);
+    localStorage.setItem("wildfire4", JSON.stringify(data.events[3].geometry[0].coordinates));
 }
 async function getEos5() {
     var response = await fetch(eosUrl)
@@ -82,22 +84,22 @@ async function getEos5() {
         aqiDisplay5.append(" AQI: " + await addAqi(lon, lat));
     }
     addAqi(lon, lat);
+    localStorage.setItem("wildfire5", JSON.stringify(data.events[4].geometry[0].coordinates));
 }
 //this is a function to grab the data from air quality api from open weather and attache the coordinates given by the EONET api
 async function addAqi(lat, lon) {
     let aqiUrl = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=' + lat + '&lon=' + lon + '&appid=461b72ac82582b3246592edff52f2471';
     let response = await fetch(aqiUrl)
     let dataAqi = await response.json();
-        console.log(dataAqi.list)
-return dataAqi.list[0].main.aqi
-    }
+    console.log(dataAqi.list)
+    return dataAqi.list[0].main.aqi
+}
 //calls the functions to display the data on the document.
 getEos1();
 getEos2();
 getEos3();
 getEos4();
 getEos5();
-
 
 
 

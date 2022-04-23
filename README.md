@@ -18,15 +18,24 @@ All elements of the project can be examined here: https://github.com/mattheweste
 
 Referenced tutorials:
 
+EONET API (NASA): https://eonet.gsfc.nasa.gov/docs/v3
+
+Air Pollution API (OpenWeather): https://openweathermap.org/api/air-pollution 
+
+Materialize Tutorial: https://www.youtube.com/watch?v=gCZ3y6mQpW0&list=PL4cUxeGkcC9gGrbtvASEZSlFEYBnPkmff
+
 async function: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+
 Cards: https://materializecss.com/cards.html
 
 //add more//
 
 ## Features
 
-The user interface style is enhanced by Materialize CSS
+The user interface style is enhanced with Materialize CSS.
 
-The application is responsive to the user click for more information about the AQI selected.
+The application displays the last five wildfires, as recorded by NASA EONET, and up-to-date AQI information for those five wildfire sites. 
 
-API information from NASA EONet and OpenWeather is used to gather worldwide data related to areas affected by recent wildfires and their current AQI, respectively.
+OpenWeather's AQI score is explained in an easy-to-read, color-coded graphic. 
+
+Coordinates for last five wildfires are stored locally, anticipating additional usage in future deployments. 
