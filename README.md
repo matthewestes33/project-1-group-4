@@ -6,7 +6,7 @@ This tracker is built to provide users with the up-to-date air quality index (AQ
 
 ## Mock-up
 
-![Wildfire AQI tracker.](//link to screenshot image there//)
+![Wildfire AQI tracker.](/images/tracker.jpg)
 
 ## Installation
 
@@ -27,8 +27,6 @@ Materialize Tutorial: https://www.youtube.com/watch?v=gCZ3y6mQpW0&list=PL4cUxeGk
 async function: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 
 Cards: https://materializecss.com/cards.html
-
-//add more//
 
 ## Features
 
