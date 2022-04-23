@@ -10,7 +10,17 @@ let aqiDisplay2 = document.getElementById('aqi-display2');
 let aqiDisplay3 = document.getElementById('aqi-display3');
 let aqiDisplay4 = document.getElementById('aqi-display4');
 let aqiDisplay5 = document.getElementById('aqi-display5');
-
+//capture the divs to be hidden
+const fireBox = document.getElementById('fire-box');
+const fireButton = document.getElementById('fire-button')
+//Hide the event data with a button
+fireButton.onclick = function () {
+    if (fireBox.style.display !== 'none') {
+        fireBox.style.display = 'none';
+    } else {
+        fireBox.style.display = 'block';
+    }
+}
 //url call for EONET
 var eosUrl = 'https://eonet.gsfc.nasa.gov/api/v3/categories/wildfires'
 //function to pull the response from EONet and combine it with the addAqi function to display the event and the nearby aqi then append it to the document.
@@ -28,7 +38,7 @@ async function getEos1() {
     addAqi(lon, lat);
     localStorage.setItem("wildfire1", JSON.stringify(data.events[0].geometry[0].coordinates));
 }
-//this is a repeat of the getEos function but built to run and display to a new <p> tag, 
+//this is a repeat of the getEos function but built to run and display to a new <p> tag,
 async function getEos2() {
     var response = await fetch(eosUrl)
     var data = await response.json();
@@ -43,7 +53,6 @@ async function getEos2() {
     addAqi(lon, lat);
     localStorage.setItem("wildfire2", JSON.stringify(data.events[1].geometry[0].coordinates));
 }
-
 async function getEos3() {
     var response = await fetch(eosUrl)
     var data = await response.json();
