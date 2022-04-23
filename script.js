@@ -97,7 +97,7 @@ async function getEos5() {
 }
 //this is a function to grab the data from air quality api from open weather and attache the coordinates given by the EONET api
 async function addAqi(lat, lon) {
-    let aqiUrl = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=' + lat + '&lon=' + lon + '&appid=9c6baa83d29531f20f93a51414d26bef';
+    let aqiUrl = 'https://api.openweathermap.org/data/2.5/air_pollution?lat=' + lat + '&lon=' + lon + '&appid=9c6baa83d29531f20f93a51414d26bef';
     let response = await fetch(aqiUrl)
     let dataAqi = await response.json();
     console.log(dataAqi.list)
